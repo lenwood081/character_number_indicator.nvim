@@ -15,8 +15,7 @@ function M.setup(opts)
 
   -- preform floor
   opts.char_number = math.floor(opts.char_number)
-
-  vim.api.nvim_set_option_value("colorcolumn", opts.char_number, {}) 
+  vim.api.nvim_set_option_value("colorcolumn", tostring(opts.char_number), {})
 end
 
 return M
